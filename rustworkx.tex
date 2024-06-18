@@ -68,7 +68,7 @@
             \centering
             \includegraphics[width=.8\textwidth]{rustworkx_logo.png}\\
             \footnotesize
-            \textit{Unofficial logo, see}:\\ \href{https://github.com/Qiskit/rustworkx/issues/824}{https://github.com/Qiskit/rustworkx/issues/824}
+            \textit{Unofficial logo proposal, see}:\\ \href{https://github.com/Qiskit/rustworkx/issues/824}{https://github.com/Qiskit/rustworkx/issues/824}
     \end{columns}
 \end{frame}
 
@@ -114,7 +114,8 @@
             \item Primary Interface
             \item Python library for creating graphs
             \item Enables using any Python object for node and edge payloads
-            \item Visualization functions for using \href{https://matplotlib.org/}{Matplotlib} and \href{https://graphviz.org/}{Graphivz}
+            \item Visualization functions for using \href{https://matplotlib.org/}{Matplotlib} and \href{https://graphviz.org/}{Graphviz}
+            \item Fully type annotated
             \item Package available on \href{https://pypi.org/project/rustworkx/}{PyPI} for Linux (x86\_64, i686, ppc64le, s390x, aarch64), Windows (32bit and 64bit), MacOS (x86\_64, arm64).
         \end{itemize}
         \column{.5\textwidth}
@@ -122,7 +123,7 @@
         \begin{itemize}
             \item Rust language library that provides rust implementation of graph algorithms
             \item Currently built as an extension to \href{https://docs.rs/petgraph/latest/petgraph/}{petgraph} library
-            \item Pure rust library (no Python needed)
+            \item Pure Rust library (no Python needed)
             \item Designed to be generic to work with with arbitrary data types
             \item Used to build the Python library
         \end{itemize}
@@ -158,17 +159,17 @@
 \end{frame}
 
 \section{Benchmarks}
-\begin{frame}
-    \frametitle{Benchmarks with Random Barabási-Albert graphs\footnotemark}
-    \begin{columns}
-        \column{.5\textwidth}
-            \includegraphics[width=\textwidth]{albert-graph_time.png} \\
-        \column{.5\textwidth}
-            \includegraphics[height=.45\textheight]{shortest_path.png} \\
-            \includegraphics[height=.45\textheight]{max_weight.png} \\
-    \end{columns}
-    \footnotetext[2]{Barabási, A. L., \& Albert, R. (1999). Emergence of scaling in random networks. science, 286(5439), 509-512. \href{https://doi.org/10.1126/science.286.5439.509}{https://doi.org/10.1126/science.286.5439.509}}
-\end{frame}
+%\begin{frame}
+%    \frametitle{Benchmarks with Random Barabási-Albert graphs\footnotemark}
+%    \begin{columns}
+%        \column{.5\textwidth}
+%            \includegraphics[width=\textwidth]{albert-graph_time.png} \\
+%        \column{.5\textwidth}
+%            \includegraphics[width=\textwidth]{shortest_path.png} \\
+%%            \includegraphics[height=.45\textheight]{max_weight.png} \\
+%    \end{columns}
+%    \footnotetext[2]{Barabási, A. L., \& Albert, R. (1999). Emergence of scaling in random networks. science, 286(5439), 509-512. \href{https://doi.org/10.1126/science.286.5439.509}{https://doi.org/10.1126/science.286.5439.509}}
+%\end{frame}
 
 \begin{frame}
     \frametitle{All Pairs shortest path for Road Network of Rome, Italy in 1999\footnotemark}
@@ -180,7 +181,7 @@
 \begin{frame}
     \frametitle{Subgraph isomorphism benchmarks using ARG database\footnotemark}
     \centering
-    \includegraphics[height=.75\textheight]{subgraph_isomorphism.png}
+    \includegraphics[width=\textwidth]{subgraph_isomorphism_cropped.png}
     \footnotetext[4]{Santo, M. D., Foggia, P., Sansone, C., \& Vento, M. (2003). A large database of graphs and its use for benchmarking graph isomorphism algorithms. Pattern Recognition Letters, 24(8), 1067–1079. \href{https://doi.org/10.1016/S0167-8655(02)00253-2}{https://doi.org/10.1016/S0167-8655(02)00253-2}}
 \end{frame}
 

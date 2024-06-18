@@ -14,12 +14,12 @@ for i in np.logspace(1, 5.5, dtype=int):
     graph = rx.directed_barabasi_albert_graph(i, 5, seed=123456789)
     build_stop = time.perf_counter()
     construct_time.append(build_stop - build_start)
-    #    for _ in range(5):
-    start = time.perf_counter()
-    rx.all_pairs_dijkstra_path_lengths(graph, lambda _: 1.0)
-    stop = time.perf_counter()
-    times.append(stop - start)
-    # times.append(statistics.geometric_mean(local_times))
+    for _ in range(5):
+        start = time.perf_counter()
+        rx.all_pairs_dijkstra_path_lengths(graph, lambda _: 1.0)
+        stop = time.perf_counter()
+        local_times.append(stop - start)
+    times.append(statistics.geometric_mean(local_times))
     print(construct_time)
     print(nodes)
     print(times)
