@@ -1,6 +1,5 @@
 use rustworkx_core::petgraph;
 use rustworkx_core::max_weight_matching::max_weight_matching;
-use rustworkx_core::Result;
 
 // Create a path graph
 let g = petgraph::graph::UnGraph::<i32, i128>::from_edges(&[

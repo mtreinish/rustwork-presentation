@@ -63,6 +63,8 @@
                 \item Primarily a library for Python
                 \item Designed for high performance and flexibility
                 \item Apache 2.0 Licensed
+                \item Project started in 2019 and first usable release published in early 2020
+                \item Has $\sim$100 algorithms and $\sim$40 graph generator functions
             \end{itemize}
         \column{.5\textwidth}
             \centering
@@ -174,14 +176,19 @@
 \begin{frame}
     \frametitle{All Pairs shortest path for Road Network of Rome, Italy in 1999\footnotemark}
     \centering
-    \includegraphics[height=.8\textheight]{all_pairs.png}
+    \includegraphics[height=.7\textheight]{all_pairs.png}\\
+    \tiny
+    rustworkx 0.10.2, python-igraph 0.9.6, networkx 2.6.3, and graph-tool 2.43 (with boost 1.76) with Python 3.9.6 on an Intel i7-6900k\\
+
     \footnotetext[3]{Demetrescu, C., Goldberg, A., \& Johnson, D. The Shortest Path Problem: Ninth DIMACS Implementation Challenge. \href{https://doi.org/10.1090/dimacs/074}{https://doi.org/10.1090/dimacs/074}}
 \end{frame}
 
 \begin{frame}
     \frametitle{Subgraph isomorphism benchmarks using ARG database\footnotemark}
     \centering
-    \includegraphics[width=\textwidth]{subgraph_isomorphism_cropped.png}
+    \includegraphics[width=\textwidth]{subgraph_isomorphism_cropped.png}\\
+    \tiny
+    rustworkx 0.10.2, python-igraph 0.9.6, networkx 2.6.3, and graph-tool 2.43 (with boost 1.76) with Python 3.9.6 on an Intel i7-6900k\\
     \footnotetext[4]{Santo, M. D., Foggia, P., Sansone, C., \& Vento, M. (2003). A large database of graphs and its use for benchmarking graph isomorphism algorithms. Pattern Recognition Letters, 24(8), 1067–1079. \href{https://doi.org/10.1016/S0167-8655(02)00253-2}{https://doi.org/10.1016/S0167-8655(02)00253-2}}
 \end{frame}
 
